@@ -1,0 +1,39 @@
+body {
+	margin: 0;
+	background-color: #090015;
+	font-family: "Courier", monospace;
+	color: #00eeff;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#main {
+	padding: 10px;
+	width: 35%;
+	display: grid;
+	background-color: #1b0040;
+}
+
+#main h1 {
+	margin-top: 0;
+}
+
+#err {
+	color: #ff00ee;
+}
+
+input {
+	background-color: #090015;
+	border: none;
+	color: #00eeff;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+button {
+	background-color: #25136f;
+	color: #00eeff;
+	border-color: #290062;
+}

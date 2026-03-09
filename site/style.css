@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+	overflow: hidden;
+	background-color: #090015;
+	font-size: 16px;
+	font-family: "Courier", monospace;
+	color: #00eeff;
+}
+
+#main {
+	position: absolute;
+	width: 100vw;
+	bottom: 24px; /* TODO: figure out a better way to do this */
+}
+
+#input {
+	position: absolute;
+	padding-left: 4px;
+	display: flex;
+	width: 100%;
+	bottom: 0px;
+	height: 24px;
+	align-items: center;
+	background-color: #1b0040;
+}
+
+p {
+	margin: 4px;
+}
