@@ -79,7 +79,6 @@ serv.post("/api/save", async (req, res)=>{
 	let dat = req.body;
 	if(dat == undefined || !token) return res.status(400).send("invalid data");
 	if(tokens[token] == undefined) return res.status(400).send("invalid token");
-	console.log(dat, tokens[token])
 	console.log(await db.run("UPDATE userdata SET encodeddata = ? WHERE userid = ?", dat, tokens[token]));
 
 });

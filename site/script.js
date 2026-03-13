@@ -62,7 +62,7 @@ function deletef(path){
 	//TODO finish
 };
 
-function create(path, type){
+function create(path, type = 0){
 	let frag = path.split("/");
 	let lroot = root;
 	let i = 1;
@@ -170,3 +170,15 @@ function log(text, raw){
 	body.appendChild(div);
 };
 
+
+addEventListener("beforeunload",(e)=>{
+	e.preventDefault();
+	fetch("/api/save", {
+		method: "POST",
+		headers: {
+			"x-token": token
+		},
+		body: JSON.stringify(root)
+	});
+	
+});
